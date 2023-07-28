@@ -61,6 +61,10 @@ public class FishDictionary {
         }
     }
 
+    public void addFish(Fish newFish){
+        fishList.add(newFish);
+    }
+
     public int searchFish(String name) {
         for (int i = 0; i < fishList.size(); i++) {
             if (fishList.get(i).getName().equalsIgnoreCase(name)) {
