@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fish.FishAddController">
+   <children>
+      <TextField fx:id="newName" layoutX="131.0" layoutY="44.0" />
+      <Label layoutX="33.0" layoutY="46.0" text="Name" />
+      <Button layoutX="430.0" layoutY="42.0" mnemonicParsing="false" onAction="#onAddButtonClick" text="Add" />
+      <TextField fx:id="newScienceName" layoutX="131.0" layoutY="84.0" />
+      <TextField fx:id="newType" layoutX="131.0" layoutY="131.0" />
+      <TextField fx:id="newLocation" layoutX="131.0" layoutY="176.0" />
+      <TextField fx:id="newWeight" layoutX="131.0" layoutY="234.0" />
+      <TextField fx:id="newLength" layoutX="131.0" layoutY="285.0" />
+      <TextField fx:id="newStatus" layoutX="131.0" layoutY="331.0" />
+      <Label layoutX="33.0" layoutY="87.0" text="Scientific Name" />
+      <Label layoutX="33.0" layoutY="134.0" text="Type" />
+      <Label layoutX="33.0" layoutY="181.0" text="Location" />
+      <Label layoutX="30.0" layoutY="239.0" text="Weight" />
+      <Label layoutX="30.0" layoutY="290.0" text="Length" />
+      <Label layoutX="32.0" layoutY="336.0" text="Status" />
+      <Button layoutX="537.0" layoutY="353.0" mnemonicParsing="false" onAction="#onBackButtonClick" text="Back" />
+   </children>
+</AnchorPane>

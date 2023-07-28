@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fish.FishSlideshowController">
+   <children>
+      <Label fx:id="name" layoutX="73.0" layoutY="75.0" text="Label" />
+      <Label fx:id="sciencename" layoutX="73.0" layoutY="106.0" text="Label" />
+      <Label fx:id="type" layoutX="73.0" layoutY="143.0" text="Label" />
+      <Label fx:id="locationLabel" layoutX="73.0" layoutY="174.0" text="Label" />
+      <Label fx:id="weight" layoutX="73.0" layoutY="208.0" text="Label" />
+      <Label fx:id="length" layoutX="73.0" layoutY="244.0" text="Label" />
+      <Label fx:id="status" layoutX="73.0" layoutY="272.0" text="Label" />
+      <ImageView fx:id="fishImg" fitHeight="241.0" fitWidth="320.0" layoutX="274.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="510.0" layoutY="340.0" mnemonicParsing="false" onAction="#onReturnToMain" text="End" />
+      <Text layoutX="331.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End only when Slideshow Stops" />
+   </children>
+</AnchorPane>
