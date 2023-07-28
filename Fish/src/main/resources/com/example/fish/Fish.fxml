@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fish.FishController">
+   <children>
+      <Label fx:id="name" layoutX="88.0" layoutY="39.0" text="Label" />
+      <Label fx:id="sciencename" layoutX="88.0" layoutY="73.0" text="Label" />
+      <Label fx:id="type" layoutX="88.0" layoutY="109.0" text="Label" />
+      <Label fx:id="locationLabel" layoutX="88.0" layoutY="153.0" text="Label" />
+      <Label fx:id="weight" layoutX="88.0" layoutY="197.0" text="Label" />
+      <Label fx:id="length" layoutX="88.0" layoutY="234.0" text="Label" />
+      <Label fx:id="status" layoutX="88.0" layoutY="276.0" text="Label" />
+      <Button layoutX="541.0" layoutY="360.0" mnemonicParsing="false" onAction="#onBackButtonClick" text="Back" />
+      <ImageView fx:id="fishImg" fitHeight="150.0" fitWidth="200.0" layoutX="363.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
