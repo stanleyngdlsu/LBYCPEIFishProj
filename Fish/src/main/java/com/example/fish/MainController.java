@@ -23,6 +23,11 @@ public class MainController {
     }
 
     @FXML
+    private void onAddFishButtonClick(ActionEvent event) throws IOException {
+        app.changeScene("AddFish.fxml");
+    }
+
+    @FXML
     private void onExit(ActionEvent e) {
         Platform.exit();
     }
