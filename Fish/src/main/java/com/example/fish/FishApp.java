@@ -7,6 +7,8 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.IOException;
 import javafx.stage.StageStyle;
+import javafx.util.Duration;
+import javafx.animation.FadeTransition;
 
 public class FishApp extends Application {
 
