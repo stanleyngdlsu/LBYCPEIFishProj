@@ -23,7 +23,7 @@ public class MainController {
     private void onViewOneButtonClick(ActionEvent event) throws IOException {
         Random rgen = new Random();
         int index = rgen.nextInt(fishList.getSize());
-        fishC.setFish(fishList.getFish(index));
+        fishC.setSelectedFish(fishList.getFish(index));
         app.changeScene("Fish.fxml");
     }
 
