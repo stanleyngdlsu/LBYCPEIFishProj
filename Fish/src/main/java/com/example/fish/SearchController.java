@@ -32,7 +32,7 @@ public class SearchController {
     private void onSearchPokemon(ActionEvent e) throws IOException {
         int index = compareName(fishName.getText());
         if(index>=0) {
-            display.setFish(fishList.getFish(index));
+            display.setSelectedFish(fishList.getFish(index));
             fishapp.changeScene("Fish.fxml");
         }
         else{
