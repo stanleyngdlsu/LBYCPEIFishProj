@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fish.MapController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#84cccb" height="407.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+      <ImageView fitHeight="364.0" fitWidth="491.0" layoutX="-8.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Background_Icons/map.png" />
+         </image>
+      </ImageView>
+      <ListView fx:id="fishPerLocation" layoutX="455.0" layoutY="14.0" prefHeight="337.0" prefWidth="131.0" />
+      <Button layoutX="541.0" layoutY="360.0" mnemonicParsing="false" onAction="#onBackButtonClick" text="Back" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="88.0" layoutX="35.0" layoutY="16.0" stroke="BLACK" strokeType="INSIDE" width="403.0" />
+      <Button layoutX="22.0" layoutY="231.0" mnemonicParsing="false" onAction="#onPacificButtonClick" prefHeight="26.0" prefWidth="26.0" style="-fx-background-radius: 30; -fx-base: #467A9D;" text=" " />
+      <Button layoutX="147.0" layoutY="204.0" mnemonicParsing="false" onAction="#onAtlanticButtonClick" prefHeight="26.0" prefWidth="26.0" style="-fx-background-radius: 30; -fx-base: #6981A2;" text=" " />
+      <Button layoutX="315.0" layoutY="244.0" mnemonicParsing="false" onAction="#onTropicalButtonClick" prefHeight="26.0" prefWidth="26.0" style="-fx-background-radius: 30; -fx-base: FF8150;" text=" " />
+      <Button layoutX="425.0" layoutY="204.0" mnemonicParsing="false" onAction="#onPacificButtonClick" prefHeight="26.0" prefWidth="26.0" style="-fx-background-radius: 30; -fx-base: #467A9D;" text=" " />
+      <Button layoutX="393.0" layoutY="270.0" mnemonicParsing="false" onAction="#onAustraliaButtonClick" prefHeight="26.0" prefWidth="26.0" style="-fx-background-radius: 30; -fx-base: #387BF0;" text=" " />
+      <Button layoutX="113.0" layoutY="257.0" mnemonicParsing="false" onAction="#onSouthAmericaButtonClick" prefHeight="26.0" prefWidth="26.0" style="-fx-background-radius: 30; -fx-base: #7B469D;" text=" " />
+      <Button layoutX="367.0" layoutY="224.0" mnemonicParsing="false" onAction="#onIndoPacificButtonClick" prefHeight="26.0" prefWidth="26.0" style="-fx-background-radius: 30; -fx-base: EC4141;" text=" " />
+      <Label layoutX="69.0" layoutY="51.0" text="Pacific" />
+      <Label layoutX="69.0" layoutY="77.0" text="Indo-Pacific" />
+      <Label layoutX="214.0" layoutY="52.0" text="Australia" />
+      <Label layoutX="69.0" layoutY="27.0" text="Tropical" />
+      <Label layoutX="216.0" layoutY="27.0" text="Atlantic" />
+      <Label layoutX="213.0" layoutY="77.0" text="South America" />
+      <Circle fill="#ff8150" layoutX="54.0" layoutY="35.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fill="#467a9d" layoutX="54.0" layoutY="60.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fill="#ec4141" layoutX="54.0" layoutY="86.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fill="#7b469d" layoutX="200.0" layoutY="88.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fill="#387bf0" layoutX="200.0" layoutY="61.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fill="#6981a2" layoutX="200.0" layoutY="36.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fill="#89a88e" layoutX="320.0" layoutY="35.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Label layoutX="332.0" layoutY="28.0" text="Global" />
+      <Button layoutX="240.0" layoutY="315.0" mnemonicParsing="false" onAction="#onGlobalButtonClick" prefHeight="26.0" prefWidth="26.0" style="-fx-background-radius: 30; -fx-base: #89a88e;" text=" " />
+   </children>
+</AnchorPane>

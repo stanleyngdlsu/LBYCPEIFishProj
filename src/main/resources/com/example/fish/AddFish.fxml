@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fish.FishAddController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Background_Icons/Global.gif" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2f2f2f" height="326.0" layoutX="14.0" layoutY="53.0" opacity="0.76" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-arc-width: 50; -fx-arc-height: 50;" width="296.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2f2f2f" height="56.0" layoutX="374.0" layoutY="53.0" opacity="0.76" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-arc-width: 50; -fx-arc-height: 50;" width="170.0" />
+      <TextField fx:id="newName" layoutX="131.0" layoutY="68.0" />
+      <Label layoutX="33.0" layoutY="69.0" prefHeight="17.0" prefWidth="86.0" text="Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Button layoutX="399.0" layoutY="68.0" mnemonicParsing="false" onAction="#onUploadImageClick" text="Add/Upload Image" />
+      <TextField fx:id="newScienceName" layoutX="131.0" layoutY="113.0" />
+      <TextField fx:id="newType" layoutX="131.0" layoutY="158.0" />
+      <TextField fx:id="newLocation" layoutX="131.0" layoutY="203.0" />
+      <TextField fx:id="newWeight" layoutX="131.0" layoutY="248.0" />
+      <TextField fx:id="newLength" layoutX="131.0" layoutY="293.0" />
+      <TextField fx:id="newStatus" layoutX="131.0" layoutY="338.0" />
+      <Button layoutX="537.0" layoutY="353.0" mnemonicParsing="false" onAction="#onBackButtonClick" text="Back" />
+      <Label fx:id="prompt" layoutX="427.0" layoutY="248.0" text="  " textFill="WHITE" />
+      <Button layoutX="426.0" layoutY="171.0" mnemonicParsing="false" onAction="#onAddButtonClick" text="Add Fish" />
+      <Label layoutX="33.0" layoutY="118.0" prefHeight="17.0" prefWidth="86.0" text="Scientific Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="163.0" prefHeight="17.0" prefWidth="86.0" text="Type" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="208.0" prefHeight="17.0" prefWidth="86.0" text="Location" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="253.0" prefHeight="17.0" prefWidth="86.0" text="Weight" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="298.0" prefHeight="17.0" prefWidth="86.0" text="Length" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="343.0" prefHeight="17.0" prefWidth="86.0" text="Status" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="149.0" layoutY="14.0" text="INPUT MARINE LIFE DETAILS">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
