@@ -27,7 +27,22 @@ public class FishApp extends Application {
 
     public FXMLLoader changeScene(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(fxml));
-        window.getScene().setRoot(fxmlLoader.load());
+        Parent root = fxmlLoader.load();
+
+        Scene currentScene = window.getScene();
+        Scene newScene = new Scene(root, 600, 400);
+
+        FadeTransition fadeOut = new FadeTransition(Duration.millis(500), currentScene.getRoot());
+        fadeOut.setFromValue(1.0);
+        fadeOut.setToValue(0.0);
+        fadeOut.setOnFinished(e -> {
+            window.setScene(newScene);
+            FadeTransition fadeIn = new FadeTransition(Duration.millis(500), newScene.getRoot());
+            fadeIn.setFromValue(0.0);
+            fadeIn.setToValue(1.0);
+            fadeIn.play();
+        });
+        fadeOut.play();
         return fxmlLoader;
     }
 
