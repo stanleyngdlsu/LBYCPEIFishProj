@@ -12,7 +12,7 @@ public class FishDesign {
         controller.weight.setText(fish.getWeight());
         controller.length.setText(fish.getLength());
         controller.status.setText(fish.getStatus());
-        controller.fishImg.setImage(new Image("file:src/main/resources/FishImages/" + fish.getName()+".jpg"));
+        controller.fishImg.setImage(new Image("file:src/main/resources/FishImages/" + fish.getName()+".png"));
     }
 
     public static void createDesign(FishSlideshowController controller, Fish fish) {
@@ -23,7 +23,7 @@ public class FishDesign {
         controller.weight.setText(fish.getWeight());
         controller.length.setText(fish.getLength());
         controller.status.setText(fish.getStatus());
-        controller.fishImg.setImage(new Image("file:src/main/resources/FishImages/" + fish.getName()+".jpg"));
+        controller.fishImg.setImage(new Image("file:src/main/resources/FishImages/" + fish.getName()+".png"));
     }
 }
 
