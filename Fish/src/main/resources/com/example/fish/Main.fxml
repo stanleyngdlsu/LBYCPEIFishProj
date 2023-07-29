@@ -18,5 +18,6 @@
       <Button layoutX="348.0" layoutY="256.0" mnemonicParsing="false" onAction="#onDeleteButtonClick" text="Delete Fish" />
       <Button layoutX="140.0" layoutY="256.0" mnemonicParsing="false" onAction="#onSlideshowButtonClick" text="Slideshow" />
       <Button layoutX="458.0" layoutY="256.0" mnemonicParsing="false" onAction="#onSearchFishButtonClick" text="Search" />
+      <Button layoutX="243.0" layoutY="305.0" mnemonicParsing="false" onAction="#onMapButtonClick" text="View Map" />
    </children>
 </AnchorPane>
