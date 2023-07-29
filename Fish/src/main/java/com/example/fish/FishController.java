@@ -39,7 +39,7 @@ public class FishController {
        FishDesign.createDesign(this, selectedFish);
     }
 
-    public static void setFish(Fish fish){
+    public static void setSelectedFish(Fish fish){
         selectedFish = fish;
     }
 
