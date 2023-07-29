@@ -42,6 +42,10 @@ public class MainController {
         app.changeScene("FishSlideshow.fxml");
     }
 
+    @FXML
+    private void onMapButtonClick(ActionEvent event) throws IOException {
+        app.changeScene("Map.fxml");
+    }
 
     @FXML
     private void onDeleteButtonClick(ActionEvent event) throws IOException {
