@@ -43,7 +43,7 @@
             <Font size="19.0" />
          </font>
       </Button>
-      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="169.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onSlideshowButtonClick" prefHeight="43.0" prefWidth="178.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 3;" text="VIEW RANDOM" textAlignment="CENTER" textFill="WHITE">
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="169.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onViewOneButtonClick" prefHeight="43.0" prefWidth="178.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 3;" text="VIEW RANDOM" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font size="19.0" />
          </font>
