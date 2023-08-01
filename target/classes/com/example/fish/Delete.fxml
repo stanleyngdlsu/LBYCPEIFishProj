@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fish.FishDeleteController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Background_Icons/Australia.gif" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="400.0" opacity="0.16" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+      <Circle layoutX="564.0" layoutY="369.0" opacity="0.54" radius="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle layoutX="227.0" layoutY="37.0" opacity="0.54" radius="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <ListView fx:id="fishes" layoutX="19.0" layoutY="96.0" prefHeight="250.0" prefWidth="562.0" style="-fx-background-color: transparent;" />
+      <Label fx:id="notif" layoutX="18.0" layoutY="68.0" prefHeight="17.0" prefWidth="176.0" text="  " />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="26.0" layoutX="18.0" layoutY="24.0" opacity="0.51" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="163.0" />
+      <TextField fx:id="pick" layoutX="18.0" layoutY="22.0" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="546.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Background_Icons/Home.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="546.0" layoutY="351.0" mnemonicParsing="false" onAction="#onBackButtonPress" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: transparent;" text=" " />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="209.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Background_Icons/Remove.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="209.0" layoutY="18.0" mnemonicParsing="false" onAction="#onDeletePress" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: transparent;" text=" " />
+   </children>
+</AnchorPane>
