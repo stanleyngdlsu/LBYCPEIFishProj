@@ -38,5 +38,6 @@
       <Button layoutX="347.0" layoutY="93.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onAddDeleteButtonClick" rotate="45.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 3;" text="Add/Delete" textFill="WHITE" />
       <Button layoutX="174.0" layoutY="291.0" mnemonicParsing="false" onAction="#onSearchFishButtonClick" rotate="45.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 3;" text="Search Fish" textFill="WHITE" />
       <Button layoutX="344.0" layoutY="291.0" mnemonicParsing="false" rotate="-45.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 3;" text="Learn More" textFill="WHITE" />
+      <Button layoutX="276.0" layoutY="357.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onQuizButtonClick" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 3;" text="Quiz" textFill="WHITE" />
    </children>
 </AnchorPane>

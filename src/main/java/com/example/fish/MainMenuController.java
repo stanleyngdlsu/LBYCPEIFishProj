@@ -32,6 +32,11 @@ public class MainMenuController {
     }
 
     @FXML
+    private void onQuizButtonClick(ActionEvent event) throws IOException {
+        app.changeScene("Quiz.fxml");
+    }
+
+    @FXML
     private void onExit(ActionEvent e) {
         Platform.exit();
     }

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fish.QuizFinishController">
+   <children>
+      <Text layoutX="211.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Congratulations! You Finished the Test" />
+      <Text fx:id="Correct" layoutX="155.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="96.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You got..." />
+      <Text layoutX="200.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="out of 10. Congrats!" />
+      <Button layoutX="473.0" layoutY="328.0" mnemonicParsing="false" onAction="#onBackButtonClick" text="Back to Main" />
+   </children>
+</AnchorPane>
