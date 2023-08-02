@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fish.LoginController">
+   <children>
+      <ImageView fitHeight="406.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Background_Icons/Indo-Pacific.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="154.0" layoutY="227.0" text="Username" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="154.0" layoutY="263.0" text="Password" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="26.0" layoutX="259.0" layoutY="230.0" opacity="0.51" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="162.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="26.0" layoutX="259.0" layoutY="264.0" opacity="0.51" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="162.0" />
+      <TextField fx:id="username" layoutX="259.0" layoutY="228.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="26.0" layoutX="273.0" layoutY="315.0" opacity="0.51" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="59.0" />
+      <Button layoutX="273.0" layoutY="312.0" mnemonicParsing="false" onAction="#handleLogin" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 3;" text="LOGIN" textFill="WHITE" />
+      <ImageView fitHeight="70.0" fitWidth="29.0" layoutX="557.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Background_Icons/Exit.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="557.0" layoutY="359.0" mnemonicParsing="false" onAction="#onExit" prefHeight="26.0" prefWidth="29.0" style="-fx-background-color: transparent;" text=" " />
+      <Label fx:id="prompt" alignment="CENTER" contentDisplay="CENTER" layoutX="189.0" layoutY="363.0" prefHeight="17.0" prefWidth="222.0" text="  " textAlignment="CENTER" textFill="RED" />
+      <PasswordField fx:id="password" layoutX="259.0" layoutY="264.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 2; -fx-text-fill: white;" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="100.0" layoutX="254.0" layoutY="69.0" rotate="45.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-fill: transparent;" width="100.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="42.0" layoutX="222.0" layoutY="98.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-fill: transparent;" width="164.0" />
+      <Label layoutX="249.0" layoutY="105.0" text="AQUADEX" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
