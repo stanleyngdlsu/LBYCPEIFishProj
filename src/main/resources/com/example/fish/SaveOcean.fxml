@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fish.SaveOceanController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Background_Icons/Global.gif" />
+         </image>
+      </ImageView>
+      <TextArea editable="false" layoutX="29.0" layoutY="43.0" prefHeight="310.0" prefWidth="561.0" text="Water covers roughly 70 percent of the Earth's surface. It &#10;houses trillions of marine organisms and nurtures a &#10;thriving ecosystem, full of life and color. However, this &#10;ecosystem is dying. Around the world, coral reefs are &#10;being destroyed, fishes are being depleted, and &#10;ecosystems are dying. This is due to a vareity of reasons, &#10;from overfishing to improper waste disposal, the ocean is &#10;getting polluted on a daily basis. This pollution will not &#10;only effect ocean life, but life on land as well. Due to the &#10;very complex web of interconnected interactions, &#10;harming the environment will indirectly result in &#10;harming our quality of life as well. Therefore, it is &#10;imperative that the pollution of the world’s oceans are &#10;to be stopped, or at the very least, slowed down.&#10; &#10;">
+         <font>
+            <Font name="Book Antiqua" size="20.0" />
+         </font>
+      </TextArea>
+      <Button layoutX="534.0" layoutY="361.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
+      <Text layoutX="193.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Save the Oceans!">
+         <font>
+            <Font name="Eras Bold ITC" size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

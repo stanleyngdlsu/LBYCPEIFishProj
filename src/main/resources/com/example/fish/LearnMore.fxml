@@ -30,7 +30,7 @@
             <Font size="19.0" />
          </font>
       </Button>
-      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="68.0" layoutY="178.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="43.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 3;" text="Insert" textAlignment="CENTER" textFill="WHITE">
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="68.0" layoutY="178.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onEnvironmentClick" prefHeight="43.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 3;" text="Save the Oceans!" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font size="19.0" />
          </font>

@@ -14,6 +14,11 @@ public class LearnMoreController {
     }
 
     @FXML
+    private void onEnvironmentClick(ActionEvent event) throws IOException{
+        app.changeScene("SaveOcean.fxml");
+    }
+
+    @FXML
     private void onReturnToMain(ActionEvent e) throws IOException {
         app.changeScene("Main.fxml");
     }

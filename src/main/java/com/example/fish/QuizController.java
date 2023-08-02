@@ -51,7 +51,7 @@ public class QuizController {
                     "B. Great White Shark",
                     "C. Nurse Shark",
                     "D. Hammer Head Shark",
-                    "B"
+                    "A"
             },
 
             // Question 4
@@ -84,12 +84,12 @@ public class QuizController {
             },
             // Question 7
             {
-                    "What percent of the World is covered in water?",
-                    "A. 10",
-                    "B. 30",
-                    "C. 50",
-                    "D. 70",
-                    "B"
+                    "From the movie Finding Nemo, what kind of fish is Nemo?",
+                    "A. Orange-Striped Fish",
+                    "B. Blue Whale",
+                    "C. Joker Fish",
+                    "D. Clown Fish",
+                    "D"
             },
             // Question 8
             {
