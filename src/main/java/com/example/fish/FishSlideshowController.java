@@ -36,7 +36,7 @@ public class FishSlideshowController {
 
     private int currentIndex = 0;
     private Timeline slideshowTimeline;
-    private FishApp pokemonApp = new FishApp();
+    private FishApp app = new FishApp();
     private FishDictionary fishDict = FishDictionary.getInstance();
 
 
@@ -47,7 +47,7 @@ public class FishSlideshowController {
 
     @FXML
     private void onReturnToMain(ActionEvent e) throws IOException {
-        pokemonApp.changeScene("Main.fxml");
+        app.changeScene("Main.fxml");
     }
 
     @FXML
