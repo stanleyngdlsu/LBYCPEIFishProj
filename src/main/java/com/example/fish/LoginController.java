@@ -1,0 +1,58 @@
+package com.example.fish;
+
+import javafx.animation.PauseTransition;
+import javafx.application.Platform;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javafx.scene.paint.Color;
+import javafx.util.Duration;
+
+import java.io.IOException;
+
+/** The temporary username and password set are the following:
+ * Username:  UserAdmin
+ * Password:  pass1234   **/
+
+public class LoginController {
+    @FXML
+    private Label prompt;
+    @FXML
+    private TextField username;
+    @FXML
+    private PasswordField password;
+
+    @FXML
+    private void handleLogin(ActionEvent event) throws IOException {
+        FishApp app = new FishApp();
+        String user = username.getText().toString();
+        String pass = password.getText().toString();
+        if (user.equals("UserAdmin")
+                && pass.equals("pass1234")) {
+            prompt.setText("Login SUCCESS! Access Granted ...");
+            prompt.setTextFill(Color.rgb(82, 255, 195));
+            PauseTransition pause = new PauseTransition(Duration.seconds(1));
+            pause.setOnFinished(e -> {
+                try {
+                    app.changeScene("Main.fxml");
+                } catch (IOException ex) {
+                    throw new RuntimeException(ex);
+                }
+            });
+            pause.play();
+        } else if (user.isEmpty() || pass.isEmpty()) {
+            prompt.setText("Enter your username & password!");
+            prompt.setTextFill(Color.rgb(255, 101, 93));
+        } else {
+            prompt.setText("Wrong Username or Password!");
+            prompt.setTextFill(Color.rgb(255, 101, 93));
+        }
+    }
+
+    @FXML
+    private void onExit(ActionEvent e) {
+        Platform.exit();
+    }
+}

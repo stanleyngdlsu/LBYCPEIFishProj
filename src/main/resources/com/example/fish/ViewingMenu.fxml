@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fish.ViewingMenuController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Background_Icons/Australia.gif" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="400.0" opacity="0.16" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+      <Circle layoutX="569.0" layoutY="369.0" opacity="0.54" radius="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <ImageView fitHeight="171.0" fitWidth="178.0" layoutX="28.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Background_Icons/ViewRandom.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="171.0" fitWidth="178.0" layoutX="215.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Background_Icons/ViewSlideshow.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="171.0" fitWidth="178.0" layoutX="404.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Background_Icons/ViewMap.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="44.0" layoutX="24.0" layoutY="168.0" opacity="0.51" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="178.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="44.0" layoutX="211.0" layoutY="168.0" opacity="0.51" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="178.0" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="212.0" layoutY="169.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onSlideshowButtonClick" prefHeight="43.0" prefWidth="178.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 3;" text="SLIDESHOW" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="44.0" layoutX="400.0" layoutY="168.0" opacity="0.51" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="178.0" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="401.0" layoutY="169.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onMapButtonClick" prefHeight="43.0" prefWidth="178.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 3;" text="VIEW MAP" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="169.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onViewOneButtonClick" prefHeight="43.0" prefWidth="178.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 3;" text="VIEW RANDOM" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="551.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Background_Icons/Home.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="551.0" layoutY="351.0" mnemonicParsing="false" onAction="#onReturnToMain" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: transparent;" text=" " />
+   </children>
+</AnchorPane>

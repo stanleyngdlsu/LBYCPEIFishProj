@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fish.QuizFinishController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Background_Icons/Indo-Pacific.gif" />
+         </image>
+      </ImageView>
+      <Circle layoutX="300.0" layoutY="201.0" opacity="0.51" radius="100.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fill="WHITE" layoutX="300.0" layoutY="200.0" radius="100.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-fill: transparent;" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="551.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Background_Icons/Home.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="551.0" layoutY="351.0" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: transparent;" text=" " />
+      <Label fx:id="score" alignment="CENTER" layoutX="221.0" layoutY="175.0" prefHeight="50.0" prefWidth="62.0" text="10" textFill="#ffa8a8">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="283.0" layoutY="175.0" text="/ 10" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="41.0" text="Congratulations! You finished the test!" textFill="WHITE">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
