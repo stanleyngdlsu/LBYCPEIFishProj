@@ -8,9 +8,7 @@ import javafx.scene.image.ImageView;
 import java.io.IOException;
 
 
-public class FishController {
-
-    private FishDictionary fishList = FishDictionary.getInstance();
+public class FishController extends FishDesign{
 
     public FishApp app = new FishApp();
     public static Fish selectedFish;
@@ -37,7 +35,7 @@ public class FishController {
 
     @FXML
     private void initialize() {
-       FishDesign.createDesign(this, selectedFish);
+       createDesign(this, selectedFish);
     }
 
     public static void setSelectedFish(Fish fish){
