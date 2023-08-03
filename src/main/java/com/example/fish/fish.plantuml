@@ -1,0 +1,336 @@
+@startuml
+title __FISH's Class Diagram__\n
+
+
+    namespace com.example.fish {
+      abstract class com.example.fish.AbstractFish {
+          {abstract} + getLength()
+          {abstract} + getLocationLabel()
+          {abstract} + getName()
+          {abstract} + getSciencename()
+          {abstract} + getStatus()
+          {abstract} + getType()
+          {abstract} + getWeight()
+      }
+    }
+
+
+
+
+    namespace com.example.fish {
+      class com.example.fish.AddController {
+          - imagePath : String
+          - newLength : TextField
+          - newLocation : TextField
+          - newName : TextField
+          - newScienceName : TextField
+          - newStatus : TextField
+          - newType : TextField
+          - newWeight : TextField
+          - prompt : Label
+          - onAddButtonClick()
+          - onBackButtonClick()
+          - onUploadImageClick()
+      }
+    }
+
+
+
+
+    namespace com.example.fish {
+      class com.example.fish.AddDeleteMenu {
+          - onAddFishButtonClick()
+          - onDeleteButtonClick()
+          - onReturnToMain()
+      }
+    }
+
+
+
+
+    namespace com.example.fish {
+      class com.example.fish.DeleteController {
+          - fishes : ListView<String>
+          - notif : Label
+          - pick : TextField
+          + initialize()
+          - compareName()
+          - getPokemonByNumber()
+          - onBackButtonPress()
+          - onDeletePress()
+          - setName()
+      }
+    }
+
+
+
+
+    namespace com.example.fish {
+      class com.example.fish.Fish {
+          - imagePath : String
+          - length : String
+          - locationLabel : String
+          - name : String
+          - sciencename : String
+          - status : String
+          - type : String
+          - weight : String
+          + Fish()
+          + getImagePath()
+          + getLength()
+          + getLocationLabel()
+          + getName()
+          + getSciencename()
+          + getStatus()
+          + getType()
+          + getWeight()
+          + setImagePath()
+          + setLength()
+          + setLocationLabel()
+          + setName()
+          + setSciencename()
+          + setStatus()
+          + setType()
+          + setWeight()
+      }
+    }
+
+
+
+
+    namespace com.example.fish {
+      class com.example.fish.FishApp {
+          {static} - window : Stage
+          + changeScene()
+          {static} + main()
+          + start()
+      }
+    }
+
+
+
+
+    namespace com.example.fish {
+      class com.example.fish.FishController {
+          + bgImg : ImageView
+          + fishImg : ImageView
+          + length : Label
+          + locationLabel : Label
+          + name : Label
+          + sciencename : Label
+          {static} + selectedFish : Fish
+          + status : Label
+          + type : Label
+          + weight : Label
+          {static} + setSelectedFish()
+          - initialize()
+          - onBackButtonClick()
+      }
+    }
+
+
+
+
+    namespace com.example.fish {
+      class com.example.fish.FishDesign {
+          {static} + createDesign()
+          {static} + createDesign()
+      }
+    }
+
+
+
+
+    namespace com.example.fish {
+      class com.example.fish.FishDictionary {
+          # fishList : List<Fish>
+          {static} - instance : FishDictionary
+          + FishDictionary()
+          + addFish()
+          + getFish()
+          + getFishList()
+          {static} + getInstance()
+          + getSize()
+          + remove()
+          + searchFish()
+          - loadFromFile()
+      }
+    }
+
+
+
+
+    namespace com.example.fish {
+      class com.example.fish.LearnMenu {
+          - onEnvironmentClick()
+          - onQuizButtonClick()
+          - onReturnToMain()
+      }
+    }
+
+
+
+
+    namespace com.example.fish {
+      class com.example.fish.LoginController {
+          - password : PasswordField
+          - prompt : Label
+          - username : TextField
+          - users : String[][]
+          - handleLogin()
+          - onExit()
+      }
+    }
+
+
+
+    namespace com.example.fish {
+      class com.example.fish.MainMenu {
+          - onAddDeleteButtonClick()
+          - onExit()
+          - onLearnMoreButtonClick()
+          - onLogout()
+          - onSearchFishButtonClick()
+          - onViewFishButtonClick()
+      }
+    }
+
+
+
+
+    namespace com.example.fish {
+      class com.example.fish.MapController {
+          + fishPerLocation : ListView<String>
+          - onAtlanticButtonClick()
+          - onAustraliaButtonClick()
+          - onBackButtonClick()
+          - onFishItemClick()
+          - onGlobalButtonClick()
+          - onIndoPacificButtonClick()
+          - onPacificButtonClick()
+          - onSouthAmericaButtonClick()
+          - onTropicalButtonClick()
+          - updateFishList()
+      }
+    }
+
+
+
+
+    namespace com.example.fish {
+      class com.example.fish.QuizController {
+          - A : Button
+          - B : Button
+          - C : Button
+          - D : Button
+          - correctAnswers : int
+          - currentQuestionIndex : int
+          - question : Label
+          - questionsAndOptions : String[][]
+          + initialize()
+          - displayQuestion()
+          - handleAnswer()
+          - onBackButtonClick()
+          - showResult()
+      }
+    }
+
+
+
+
+    namespace com.example.fish {
+      class com.example.fish.QuizFinishController {
+          - score : Label
+          + setCorrect()
+          - onBackButtonClick()
+      }
+    }
+
+
+
+
+    namespace com.example.fish {
+      class com.example.fish.SaveOceanController {
+          - onBack()
+      }
+    }
+
+
+
+
+    namespace com.example.fish {
+      class com.example.fish.SearchController {
+          - fishName : TextField
+          - fishes : ListView<String>
+          - notif : Label
+          + initialize()
+          - compareName()
+          - onReturnToMain()
+          - onSearchFish()
+          - setName()
+      }
+    }
+
+
+
+    namespace com.example.fish {
+      class com.example.fish.SlideshowController {
+          + bgImg : ImageView
+          + fishImg : ImageView
+          + length : Label
+          + locationLabel : Label
+          + name : Label
+          + sciencename : Label
+          + status : Label
+          + type : Label
+          + weight : Label
+          - currentIndex : int
+          - slideshowTimeline : Timeline
+          + createCard()
+          + viewAll()
+          ~ stopSlideshow()
+          - initialize()
+          - onReturnToMain()
+          - showNextFish()
+      }
+    }
+
+
+
+
+    namespace com.example.fish {
+      class com.example.fish.ViewingMenu {
+          + onSlideshowButtonClick()
+          - onMapButtonClick()
+          - onReturnToMain()
+          - onViewOneButtonClick()
+      }
+    }
+
+
+
+  com.example.fish.AddController o-- com.example.fish.FishDictionary : fishList
+  com.example.fish.AddDeleteMenu o-up- com.example.fish.FishApp : app
+  com.example.fish.DeleteController o-- com.example.fish.FishDictionary : fishList
+  com.example.fish.Fish -up-|> com.example.fish.AbstractFish
+  com.example.fish.FishApp -up-|> javafx.application.Application
+  com.example.fish.FishController -up-|> com.example.fish.FishDesign
+  com.example.fish.LearnMenu o-up- com.example.fish.FishApp : app
+  com.example.fish.MainMenu o-up- com.example.fish.FishApp : app
+  com.example.fish.MapController o-- com.example.fish.FishDictionary : fishList
+  com.example.fish.SearchController o-up- com.example.fish.FishController : display
+  com.example.fish.SearchController o-- com.example.fish.FishDictionary : fishList
+  com.example.fish.SlideshowController -up-|> com.example.fish.FishDesign
+  com.example.fish.SlideshowController o-- com.example.fish.FishDictionary : fishDict
+  com.example.fish.ViewingMenu o-up- com.example.fish.FishApp : app
+  com.example.fish.ViewingMenu o-- com.example.fish.FishController : display
+  com.example.fish.ViewingMenu o-- com.example.fish.FishDictionary : fishList
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+@enduml
