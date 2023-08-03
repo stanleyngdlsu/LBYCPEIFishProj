@@ -12,7 +12,7 @@ import javafx.util.Duration;
 
 import java.io.IOException;
 
-public class FishSlideshowController {
+public class FishSlideshowController extends FishDesign{
     @FXML
     public Label name;
     @FXML
@@ -57,7 +57,7 @@ public class FishSlideshowController {
 
 
     public void createCard(Fish fish) {
-        FishDesign.createDesign(this, fish);
+        createDesign(this, fish);
     }
 
     public void viewAll() {
